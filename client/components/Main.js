@@ -1,14 +1,17 @@
 import React from 'react';
-import { Link } from 'react-router';
+import { Route } from 'react-router-dom';
+import { PhotoGrid } from './PhotoGrid';
 
 const Main = React.createClass({
-    render(){
-        return (
-            <div>
-                <h1><Link to="/">Reduxtagram</Link></h1>
-            </div>
-        )
-    }
+
+  render() {
+    return (
+        <div className="photo-grid">
+            <h1>OI</h1>
+            <Route exact path="/" component={PhotoGrid}/>
+        </div>
+    )
+  }
 });
 
 export default Main;

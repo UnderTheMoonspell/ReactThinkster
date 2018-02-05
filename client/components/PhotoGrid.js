@@ -1,19 +1,16 @@
 import React from 'react';
-import Photo from './Photo';
+import { Route } from 'react-router-dom';
+import { Single } from './Single';
 
 const PhotoGrid = React.createClass({
 
-  handleSubmit(e) {
-    e.preventDefault();
-    this.props.addItem(this.refs.item.value);
-  },
-
   render() {
     return (
-      <div className="photo-grid">
-        {this.props.posts.map((post,i) => <Photo {...this.props} key={i} i={i} post={post} />)}
-      </div>
-    );
+        <div className="photo-grid">
+            <div>OI</div>
+            {/*<Route path="/view/:photo-id" component={Single}/>*/}
+        </div>
+    )
   }
 });
 
