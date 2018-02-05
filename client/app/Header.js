@@ -13,7 +13,7 @@ import { Link } from 'react-router-dom';
 
 const Header = () => (
         <div>
-            <h1><Link to="/">Reduxstagram</Link></h1>
+            <h1><Link to="/error">Reduxstagram</Link></h1>
         </div>
 )
 
