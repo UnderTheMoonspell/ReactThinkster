@@ -1,9 +1,8 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
-import { Single } from './Single';
+import { Single } from '../post/Single';
 
-const PhotoGrid = React.createClass({
-
+class PhotoGrid extends React.Component{
   render() {
     return (
         <div className="photo-grid">
@@ -12,6 +11,6 @@ const PhotoGrid = React.createClass({
         </div>
     )
   }
-});
+};
 
 export default PhotoGrid;

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
-import { PhotoGrid } from './PhotoGrid';
+import { PhotoGrid } from '../photo-grid/PhotoGrid';
 
 const Main = React.createClass({
 

@@ -1,12 +1,12 @@
 import React from 'react';
 
-const Single = React.createClass({
+class Single extends React.Component{
     render(){
         return (
             <div className="single-photo">
             </div>
         )
     }
-});
+};
 
 export default Single;
