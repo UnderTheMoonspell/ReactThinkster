@@ -11,14 +11,16 @@ import store, { history } from './app/store';
 
 import { Provider } from 'react-redux';
 
+import { ConnectedRouter } from 'react-router-redux';
+
 const router = (
     <Provider store={store}>
-        <Router history={history}>
+        <ConnectedRouter history={history}>
             <Switch>
                 <Route path="/error" component={ErrorPage} />
                 <Route exact path="/" component={App} />  
             </Switch>
-        </Router>
+        </ConnectedRouter>
     </Provider>
 )
 
