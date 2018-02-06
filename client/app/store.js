@@ -2,12 +2,10 @@ import { createStore, compose, combineReducers, applyMiddleware } from 'redux';
 import { syncHistoryWithStore, routerReducer, routerMiddleware } from 'react-router-redux';
 import { createBrowserHistory } from 'history';
 import logger from 'redux-logger';
-import { reducer as postReducer } from '../post/reducer';
-import { reducer as photoGridReducer } from '../photo-grid/reducer';
+import postsReducer from '../post/reducer';
 
 const appReducer = combineReducers({
-    posts: postReducer,
-    photogrid: photoGridReducer,
+    posts: postsReducer,
     router: routerReducer
 })
 

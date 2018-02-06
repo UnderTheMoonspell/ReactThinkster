@@ -16,7 +16,4 @@ const postsReducer = (state = initialState, action) => {
     }
 }
 
-export const reducer = combineReducers({
-    comments: commentsReducer,
-    posts: postsReducer
-})
+export default postsReducer;

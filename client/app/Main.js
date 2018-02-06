@@ -1,6 +1,6 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
-import PhotoGrid from '../photo-grid/PhotoGrid';
+import PhotoGrid from '../home/PhotoGrid';
 import Single from '../post/Single';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
@@ -27,10 +27,9 @@ class Main extends React.Component{
             <Switch>
                 {/*<Route path="/teste2" component={Single} posts={this.props.posts}/>*/}
                 {/*<Route path="/" component={PhotoGrid} posts={this.props.posts}/>*/}
-                <PhotoGrid posts={this.props.posts} onClick={(e) => this.props.onTesteClick(e)}></PhotoGrid>
-                {/*<PropRoute path="/">
-                    <PhotoGrid posts={this.props.posts} onClick={() => onTesteClick()}></PhotoGrid>
-                </PropRoute>*/}
+                <PropRoute path="/">
+                    <PhotoGrid posts={this.props.posts} onClick={(e) => this.props.onTesteClick(e)} />
+                </PropRoute>
             </Switch>            
         </div>
     )
