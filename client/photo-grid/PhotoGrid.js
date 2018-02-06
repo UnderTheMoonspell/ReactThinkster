@@ -1,10 +1,10 @@
 import React from 'react';
-// import { Single } from '../post/Single';
+import css from './styles.css';
 
-const PhotoGrid = (posts, onTesteClick) => (
+const PhotoGrid = ({posts, onClick}) => (
     <div>
         <h1>OI</h1>
-        <button onClick={() => onTesteClick(2)}></button>
+        <button onClick={() => onClick(posts.posts[1])}>BUTTON</button>
     </div>
 );
 
