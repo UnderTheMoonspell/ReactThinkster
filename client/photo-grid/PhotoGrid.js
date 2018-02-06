@@ -1,16 +1,12 @@
 import React from 'react';
-import { Route } from 'react-router-dom';
-import { Single } from '../post/Single';
+// import { Single } from '../post/Single';
 
-class PhotoGrid extends React.Component{
-  render() {
-    return (
-        <div className="photo-grid">
-            <div>OI</div>
-            {/*<Route path="/view/:photo-id" component={Single}/>*/}
-        </div>
-    )
-  }
-};
+const PhotoGrid = (posts, onTesteClick) => (
+    <div>
+        <h1>OI</h1>
+        <button onClick={() => onTesteClick(2)}></button>
+    </div>
+);
+
 
 export default PhotoGrid;

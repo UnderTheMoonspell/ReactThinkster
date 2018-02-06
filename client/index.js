@@ -18,7 +18,7 @@ const router = (
         <ConnectedRouter history={history}>
             <Switch>
                 <Route path="/error" component={ErrorPage} />
-                <Route exact path="/" component={App} />  
+                <Route path="/" component={App} />
             </Switch>
         </ConnectedRouter>
     </Provider>

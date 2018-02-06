@@ -6,8 +6,8 @@ import { reducer as postReducer } from '../post/reducer';
 import { reducer as photoGridReducer } from '../photo-grid/reducer';
 
 const appReducer = combineReducers({
-    postReducer,
-    photoGridReducer,
+    posts: postReducer,
+    photogrid: photoGridReducer,
     router: routerReducer
 })
 
